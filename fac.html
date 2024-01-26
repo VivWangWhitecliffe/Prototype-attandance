@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Your Dashboard</title>
+
+</head>
+<body>
+        <!-- Faculty Tab Content -->
+        <div class="tab-pane fade show active" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+            <div class="container mt-4">
+                <h2 class="mb-4">Whitecliffe Attendance System: Faculty Interface</h2>
+                <nav class="navbar navbar-expand navbar-light bg-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="fac.html">Attendance</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="atrisk.html">At Risk Students</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="details.html">Student Details</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="tab-content mt-2 ">     
+            <section ID="Attendance" class="container mt-4">
+                <h2 class="card-title text-center mb-4">Attendance</h2>
+                <div id="attendance" class="tab-content">
+                    <label for="courseDropdown" class="form-label">Select Course:</label>
+                        <select class="form-select" id="courseDropdown">
+                            <option selected>Select a course</option>
+                            <option value="web-concept-q1">Web Concept Q1</option>
+                            <option value="software-development-fundamentals-q1">Software Development Fundamentals Q1</option>
+                
+                        </select>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="weekDropdown" class="form-label">Select Week:</label>
+                        <select class="form-select" id="weekDropdown">
+                            <option selected>Select a week</option>
+                            <option value="week1">Week 1</option>
+                            <option value="week2">Week 2</option>
+                            <option value="week1">Week 3</option>
+                            <option value="week2">Week 4</option>
+                            <option value="week1">Week 5</option>
+                            <option value="week2">Week 6</option>
+                            <option value="week1">Week 7</option>
+                            <option value="week2">Week 8</option>
+                            <option value="week1">Week 9</option>
+
+                        </select>
+                    </div>
+            
+                    <!-- Table for Students -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Final Status</th>
+                                <th>Attendance Session 1</th>
+                                <th>Attendance Session 2</th>
+                                <th>Engagement</th>
+                                <th>Action</th>
+                                <th>Follow Up</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data for Students will be dynamically populated here -->
+                            <tr>
+                                <td>20210993</td>
+                                <td>Ciar Daire</td>
+                                <td>Smythe</td>
+                                <td>
+                                    <select class="form-select">
+                                        <option value="present">At Risk</option>
+                                        <option value="absent">On Track</option>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 1 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                             
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 2 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                     
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="engagement">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="action">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="follow-up">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20210444</td>
+                                <td>Zhui</td>
+                                <td>Huang</td>
+                                <td>
+                                    <select class="form-select">
+                                        <option value="present">At Risk</option>
+                                        <option value="absent">On Track</option>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 1 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 2 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="engagement">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="action">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="follow-up">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20244993</td>
+                                <td>Maki</td>
+                                <td>Kamiya</td>
+                                <td>
+                                    <select class="form-select">
+                                        <option value="present">At Risk</option>
+                                        <option value="absent">On Track</option>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 1 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 2 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="engagement">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="action">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="follow-up">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20210993</td>
+                                <td>Ciar Daire</td>
+                                <td>Smythe</td>
+                                <td>
+                                    <select class="form-select">
+                                        <option value="present">At Risk</option>
+                                        <option value="absent">On Track</option>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 1 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 2 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="engagement">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="action">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="follow-up">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20210333</td>
+                                <td>Camila</td>
+                                <td>Smythe</td>
+                                <td>
+                                    <select class="form-select">
+                                        <option value="present">At Risk</option>
+                                        <option value="absent">On Track</option>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 1 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 2 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="engagement">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="action">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="follow-up">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20266993</td>
+                                <td>Daire</td>
+                                <td>Smythe</td>
+                                <td>
+                                    <select class="form-select">
+                                        <option value="present">At Risk</option>
+                                        <option value="absent">On Track</option>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 1 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" name="Session 2 attendance">
+                                        <option value="present">Present</option>
+                                        <option value="absent">Absent</option>
+                                        <option value="informed absent">Informed Absent</option>
+                                        <!-- Add more options as needed -->
+                                    </select>
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="engagement">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="action">
+                                </td>
+                                <td>
+                                    <input type="text" class="form-control" name="follow-up">
+                                </td>
+                            </tr>
+                            <!-- Add more rows for other students -->
+                        </tbody>
+                    </table>
+      
+                        <div class="text-center">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                    
+                    </div>
+                </div>
+                </div>
+            </section>
+
+     
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

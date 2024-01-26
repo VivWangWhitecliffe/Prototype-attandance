@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Leader Interface</title>
+    <!-- Bootstrap CSS link -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- AdminLTE CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+</head>
+<body >
+    <div class="tab-pane fade show active" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+        <div class="container mt-4">
+            <h2 class="mb-4">Whitecliffe Attendance System: Programme Leader Interface</h2>
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="pl.html">Attendance Tracking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="plcr.html">Charts and Reports</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="platrisk.html">At-Risk Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pldetails.html">Student Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-tachometer-alt"></i>
+                            <p>Overall</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i>
+                            <p>Vivian Wang</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i>
+                            <p>Sana Alyaseri</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i>
+                            <p>Seyed Hosseini</p>
+                        </a>
+                    </li>
+                    
+                 
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i>
+                            <p>Tasawer Khan</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-user"></i>
+                            <p>Bilal Ishfaq</p>
+                        </a>
+                    </li>   
+
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+
+    <section id="ARS" class="container mt-4 tab-content">
+        <h2 class="card-title text-center mb-4">At Risk Students</h2>
+        <div class="mb-3">
+      
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Lecturer</th>
+                        <th>Final Status</th>
+                        <th>Comment</th>
+                        <th>Add Comment</th>
+                        <th>Action</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Data (replace with your actual data) -->
+                    <tr>
+                        <td>20210993</td>
+                        <td>Ciar Daire Smythe</td>
+                        <td>Web Concepts</td>
+                        <td>Vivian Wang</td>
+                        <td>At Risk</td>
+                        <td>NA</td> 
+                        <td>
+                            <!-- Input field and button side by side -->
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="comment20210993" placeholder="Add Comment">
+                                <button class="btn btn-primary">Submit</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn btn-success">Move to On Track</button>
+                        </td>
+                       
+                    </tr>
+                    <!-- Add more rows for other students -->
+                </tbody>
+            </table>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        </body>
+        </html>
+        
+        

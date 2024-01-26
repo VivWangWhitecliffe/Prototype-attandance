@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Leader Interface</title>
+    <!-- Bootstrap CSS link -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- AdminLTE CSS link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/css/adminlte.min.css">
+</head>
+</head>
+<body >
+    <div class="tab-pane fade show active" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+        <div class="container mt-4">
+            <h2 class="mb-4">Whitecliffe Attendance System: Programme Leader Interface</h2>
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="pl.html">Attendance Tracking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Charts and Reports</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="platrisk.html">At-Risk Students</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pldetails.html">Student Details</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Overall</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>Enrolment Data</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-chart-pie"></i>
+                                <p>Campus Wise</p>
+                            </a>
+                        </li>
+                        
+                     
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>Programme Wise</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>Course Wise</p>
+                            </a>
+                        </li>   
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>Lecturer Wise</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark">Dashboard</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <!-- Placeholder Chart 1 -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Chart 1</h5>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chart1" width="400" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- Placeholder Chart 2 -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Chart 2</h5>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="chart2" width="400" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block">
+                Version 3.1.0
+            </div>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- Bootstrap JS and Popper.js scripts (required for some Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- AdminLTE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1.0/dist/js/adminlte.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+
+    <!-- Dummy Data and Chart Initialization -->
+    <script>
+        // Dummy data for charts
+        var chartData1 = {
+            labels: ["January", "February", "March", "April", "May"],
+            datasets: [{
+                label: 'Dataset 1',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1,
+                data: [65, 59, 80, 81, 56]
+            }]
+        };
+
+        var chartData2 = {
+            labels: ["June", "July", "August", "September", "October"],
+            datasets: [{
+                label: 'Dataset 2',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1,
+                data: [28, 48, 40, 19, 86]
+            }]
+        };
+
+        // Chart 1
+        var ctx1 = document.getElementById('chart1').getContext('2d');
+        var myChart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: chartData1
+        });
+
+        // Chart 2
+        var ctx2 = document.getElementById('chart2').getContext('2d');
+        var myChart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: chartData2
+        });
+    </script>
+</body>
+</html>
